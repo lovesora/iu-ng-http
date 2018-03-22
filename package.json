@@ -1,0 +1,44 @@
+{
+  "$schema": "./node_modules/ng-packagr/package.schema.json",
+  "name": "@iu/ng-http",
+  "version": "1.0.0",
+  "description": "angular http",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "ng-packagr -p package.json",
+    "prepub": "npm run build",
+    "pub": "npm publish dist",
+    "postpub": "npm version patch && git push"
+  },
+  "ngPackage": {
+    "lib": {
+      "entryFile": "public_api.ts"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lovesora/iu-ng-http.git"
+  },
+  "keywords": [
+    "angular",
+    "http"
+  ],
+  "author": "liuxin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lovesora/iu-ng-http/issues"
+  },
+  "homepage": "https://github.com/lovesora/iu-ng-http#readme",
+  "devDependencies": {
+    "@angular/compiler": "^5.0.0",
+    "@angular/compiler-cli": "^5.0.0",
+    "lodash-es": "^4.17.7",
+    "ng-packagr": "2.2.0",
+    "typescript": "2.4.2"
+  },
+  "peerDependencies": {
+    "@angular/core": "^5.0.0",
+    "@angular/http": "^5.0.0",
+    "rxjs": "^5.5.0"
+  }
+}
