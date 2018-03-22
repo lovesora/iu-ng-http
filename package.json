@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/ng-packagr/package.schema.json",
-  "name": "@iu/ng-http",
+  "name": "iu-ng-http",
   "version": "1.0.0",
   "description": "angular http",
   "main": "src/index.js",
