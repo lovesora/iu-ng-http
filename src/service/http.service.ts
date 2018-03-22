@@ -85,7 +85,7 @@ export class HttpService {
     const _request = new Request(_requestOptions);
 
     // 获取缓存数据
-    const cache = this._cache.filter(v => _isEqual(v.request, _request));
+    const cache = this._cache.filter(v => isEqual(v.request, _request));
     if (isFromCache && cache.length > 0) {
       return Observable.of(cache);
     }
@@ -96,14 +96,14 @@ export class HttpService {
       if (response.ok && (response.status >= 200 && response.status < 300)) {
         try {
           const body = response.json();
-          if (!_isObject(body) || body.code !== 0) {
+          if (!isObject(body) || body.code !== 0) {
             throw response;
           } else {
             this.successResponseInterceptor(successMessage, response);
           }
           this._cache.push({
             request: _request,
-            data: _cloneDeep(body),
+            data: cloneDeep(body),
           });
           result = body;
         } catch (e) {

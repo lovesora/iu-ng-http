@@ -59,4 +59,5 @@ typings/
 
 # ng-packagr
 .ng_pkg_build/
+dist/
 

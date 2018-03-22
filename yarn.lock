@@ -17,6 +17,18 @@
   dependencies:
     tslib "^1.7.1"
 
+"@angular/core@^5.0.0":
+  version "5.2.9"
+  resolved "http://npm.petkit.com/@angular%2fcore/-/core-5.2.9.tgz#3daf13ef9aa754b9954ed21da3eb322e8b20f667"
+  dependencies:
+    tslib "^1.7.1"
+
+"@angular/http@^5.0.0":
+  version "5.2.9"
+  resolved "http://npm.petkit.com/@angular%2fhttp/-/http-5.2.9.tgz#2ffea536e181bc97e2867593d57425ea7853285b"
+  dependencies:
+    tslib "^1.7.1"
+
 "@ngtools/json-schema@^1.1.0":
   version "1.1.0"
   resolved "http://npm.petkit.com/@ngtools%2fjson-schema/-/json-schema-1.1.0.tgz#c3a0c544d62392acc2813a42c8a0dc6f58f86922"
